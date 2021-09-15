@@ -44,11 +44,11 @@ $(document).ready(function(){
   let desplazarMenu = () => {
       let menu_nav = document.getElementById('menu-nav');
       let scroll_menu = window.pageYOffset;
-      let main_principal = document.querySelector('.main');
+      let main_principal = document.querySelector('.portada');
 
       if(scroll_menu > 300){
           menu_nav.classList.add('positionFixed');
-          main_principal.style.marginTop = '84px';
+          main_principal.style.marginTop = '77px';
       }else{
           menu_nav.classList.remove('positionFixed');
           main_principal.style.marginTop = '0px';
