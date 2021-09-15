@@ -1,0 +1,79 @@
+$colorPrimary: #73B7A8; 
+$colorNegro: #000000;
+$colorBlanco: #ffffff;
+$fuentePrimary: 'Roboto', sans-serif;
+$fuenteSecondary: 'Raleway', sans-serif;
+
+@mixin style_h3{
+    text-align: center;
+    font-family: $fuentePrimary;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.cont-habilidades{
+    background: rgb(240, 240, 240);
+    padding: 60px 0px;
+    .contenedor{
+        .cont-title-habilidades{
+            .titulo-habilidades{
+                width: 100%;
+                box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.3);
+                h3{
+                    text-align: center;
+                    font-family: $fuentePrimary;
+                    font-weight: 300;
+                    font-size: 40px;
+                }
+            }
+        }
+        .cont-img-habilidades{
+            .titulo-img{
+                margin-bottom: 20px;
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+                p{
+                    padding: 5px 0px;
+                    width: 300px;
+                    text-align: center;
+                    background-color: #73B7A8;
+                    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1) inset;
+                    color: $colorBlanco;
+                    font-size: 24px;
+                    text-decoration: none;
+                    display: inline;
+                }
+            }
+            .owl-carousel{
+                .img-habilidad{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    transition: all .3s ease;
+                    box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 0.1);
+                    background-color: $colorBlanco;
+                    &:hover{
+                        transform: scale(.9,.9);
+                    }
+                    img{
+                        vertical-align:top;
+                        width: 150px;
+                    }
+                    p{
+                        background-color: #73B7A8;
+                        width: 100%;
+                        text-align: center;
+                        padding: 6px 0px;
+                        color: $colorBlanco;
+                        font-size: 16px;
+                        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1) inset;
+                    }
+                }
+            }
+        }
+    }
+}
+

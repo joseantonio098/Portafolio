@@ -1,0 +1,178 @@
+
+.menu-nav{
+    background-color: #73B7A8;
+    width: 100%;
+    margin: auto;
+    height: 84px;
+    position: relative;
+    z-index : 10;
+    overflow-x: hidden;
+    nav{
+        width: 100%;
+        .contenedor{
+            .nav-principal{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 84px;
+                .nav-logo{
+                    background-color: #862c36;
+                    padding: 12px 15px;
+                    border-radius: 10px 0px 10px 0px;
+                    cursor: pointer;
+                    &:hover a{
+                    }
+                    a{
+                        color: #ffffff;
+                        font-size: 1.5em;
+                        text-decoration: none;
+                    }
+                }
+                .nav-listas{
+                    ul{
+                        display: flex;
+                        li{
+                            border-left: 1px solid rgba(255, 255, 255, 0.5);
+                            padding: 10px 30px;
+                            transition: all .3s ease;
+                            cursor: pointer;
+                            a{
+                                color: #ffffff;
+                                font-weight: 300;
+                                font-size: 1.125em;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}   
+
+//----------------- Menú Slicknav 
+.slicknav_menu{
+    display: none;
+    background-color: #73B7A8;
+}
+
+//----------------- Animación para el menú
+.an-1{
+    animation-delay: .2s;
+    animation-duration: 1s;
+}
+.an-2{
+    animation-delay: .5s;
+    animation-duration: 1s;
+}
+.an-3{
+    animation-delay: .8s;
+    animation-duration: 1s;
+}
+.an-4{
+    animation-delay: 1.1s;
+    animation-duration: 1s;
+}
+.an-5{
+    animation-delay: 1.4s;
+    animation-duration: 1s;
+}
+
+.an-logo-1{
+    animation-delay: .5s;
+    animation-duration: 1.5s;
+}
+
+//------------- MENÚ RESPONSIVE
+@media (max-width: 1000px) {
+    .menu-nav{
+        height: 140px;
+        .nav-principal{
+                flex-direction: column;
+                margin-top: 12px;
+            .nav-listas{
+                margin-top: 12px;
+                ul{
+                    li{
+                        border-left: 1px solid #ffffff;
+                        padding: 10px 15px;
+                        a{
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
+
+@media (max-width: 800px) {
+    .menu-nav{
+        display: none;
+    }
+    .slicknav_menu{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        width: 100%;
+        text-align: center;
+        li{
+            font-size: 16px;
+            margin-bottom: 5px;
+            a{
+                color: #ffffff;
+            }
+        }
+    }
+    .slicknav_btn{ //--Btn responsive
+        background-color: #73b7a8;
+        padding: 6px 0px;
+        .slicknav_icon{
+            font-size: 25px;
+            margin: 5px 0px;
+        }
+    }
+    .an-1{
+        animation-delay: .2s;
+        animation-duration: .5s;
+    }
+    .an-2{
+        animation-delay: .5s;
+        animation-duration: .5s;
+    }
+    .an-3{
+        animation-delay: .8s;
+        animation-duration: .5s;
+    }
+    .an-4{
+        animation-delay: 1.1s;
+        animation-duration: .5s;
+    }
+    .an-5{
+        animation-delay: 1.4s;
+        animation-duration: .5s;
+    }
+}
+
+
+//Menú ---> Animación de Scroll
+.positionFixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation-name: animacionNav;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    box-shadow: 1px 0px 3px 1px rgba(0,0,0,.5);
+}
+
+@keyframes animacionNav{
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
