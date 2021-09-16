@@ -462,4 +462,167 @@ header .contenedor .menu .menuEnlace a {
 .contProyectos .contenedor .contGrid .proyecto .btnYoutube .youtube:hover {
   padding: 4px 15px;
 }
+
+footer {
+  background-color: #003342;
+  padding: 30px 0px;
+  /* Color Variables */
+  /* Social Icon Mixin */
+}
+
+footer .contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .contenedor .footerCopy p {
+  color: white;
+  font-size: 1.125em;
+}
+
+footer .contenedor .footerIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .contenedor .footerIcon .social-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 55px;
+  height: 55px;
+  margin: 0 0.5rem;
+  border-radius: 10px 0px 10px 0px;
+  cursor: pointer;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+footer .contenedor .footerIcon .social-icon:hover {
+  color: #fff;
+}
+
+footer .contenedor .footerIcon .social-icon:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -150%);
+          transform: translate(-50%, -150%);
+}
+
+footer .contenedor .footerIcon .social-icon:active {
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+}
+
+footer .contenedor .footerIcon .social-icon--cv {
+  background: #0b7781;
+  color: #fff;
+}
+
+footer .contenedor .footerIcon .social-icon--cv .tooltip {
+  background: #0b7781;
+  color: currentColor;
+}
+
+footer .contenedor .footerIcon .social-icon--cv .tooltip:after {
+  border-top-color: #0b7781;
+}
+
+footer .contenedor .footerIcon .social-icon--correo {
+  background: #0b7781;
+  color: #fff;
+}
+
+footer .contenedor .footerIcon .social-icon--correo .tooltip {
+  background: #0b7781;
+  color: currentColor;
+}
+
+footer .contenedor .footerIcon .social-icon--correo .tooltip:after {
+  border-top-color: #0b7781;
+}
+
+footer .contenedor .footerIcon .social-icon--github {
+  background: #0b7781;
+  color: #fff;
+}
+
+footer .contenedor .footerIcon .social-icon--github .tooltip {
+  background: #0b7781;
+  color: currentColor;
+}
+
+footer .contenedor .footerIcon .social-icon--github .tooltip:after {
+  border-top-color: #0b7781;
+}
+
+footer .contenedor .footerIcon .social-icon--whatsapp {
+  background: #0b7781;
+  color: #fff;
+}
+
+footer .contenedor .footerIcon .social-icon--whatsapp .tooltip {
+  background: #0b7781;
+  color: currentColor;
+}
+
+footer .contenedor .footerIcon .social-icon--whatsapp .tooltip:after {
+  border-top-color: #0b7781;
+}
+
+footer .contenedor .footerIcon .social-icon i {
+  position: relative;
+  top: 1px;
+}
+
+footer .tooltip {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+footer .tooltip:after {
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  content: "";
+  border: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  -webkit-transform: translate(-50%, 100%);
+          transform: translate(-50%, 100%);
+}
 /*# sourceMappingURL=style.css.map */
