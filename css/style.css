@@ -77,12 +77,12 @@ header .contenedor .menu {
 }
 
 header .contenedor .menu .menuLogo p {
-  font-size: 25px;
+  font-size: 1.6em;
   color: #ffffff;
 }
 
 header .contenedor .menu .menuEnlace a {
-  font-size: 17px;
+  font-size: 1.0625em;
   text-decoration: none;
   color: #ffffff;
   font-weight: 300;
@@ -624,5 +624,106 @@ footer .tooltip:after {
   border-color: transparent;
   -webkit-transform: translate(-50%, 100%);
           transform: translate(-50%, 100%);
+}
+
+@media (max-width: 900px) {
+  .sobremi .contenedor .sobremiCont .sobremiCont-perfil {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sobremi .contenedor .sobremiCont .sobremiCont-perfil .sobremiCont-perfilFoto {
+    width: 100%;
+  }
+  .sobremi .contenedor .sobremiCont .sobremiCont-perfil .sobremiCont-perfilFoto div img {
+    width: 260px;
+    height: 280px;
+  }
+  .sobremi .contenedor .sobremiCont .sobremiCont-perfil .sobremiCont-perfilDesc {
+    width: 100%;
+  }
+  .sobremi .contenedor .sobremiCont .sobremiCont-perfil .sobremiCont-perfilDesc div p {
+    line-height: 30px;
+  }
+  .habilidades .contenedor .habilidadesCont .habilidadesCont-titulo p {
+    width: 250px;
+  }
+  .contProyectos .contenedor .contGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 20px;
+    /* Define margen (y-x) */
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  header .contenedor .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .contenedor .menu .menuLogo {
+    display: none;
+  }
+  header .contenedor .menu .menuEnlace a {
+    margin: 0px 6px;
+  }
+  .portada {
+    height: 400px;
+  }
+  .portada main .portadaCont {
+    height: 400px;
+    padding-bottom: 90px;
+  }
+  .portada main .portadaCont .portadaCont-titulo {
+    width: 300px;
+  }
+  .contProyectos .contenedor .contGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px 20px;
+    /* Define margen (y-x) */
+  }
+  footer .contenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .contenedor .footerCopy {
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
