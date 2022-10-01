@@ -31,7 +31,7 @@
         <main>
             <div class="portadaCont">
                 <div class="contenedor">
-                    <div class="portadaCont-titulo">
+                    <div class="portadaCont-titulo animJV">
                         <h2> Jose Valencia </h2>
                         <p> Desarrollador Web <i class="fas fa-globe" id="web"></i> </p>
                     </div>
@@ -48,20 +48,20 @@
                 </div>
                 <div class="sobremiCont-perfil">
                     <div class="sobremiCont-perfilFoto">
-                        <div>
+                        <div class="animImgPerf">
                             <img src="img/imgPerfil.jpg" alt="Imagen-Perfil">
                         </div>
                     </div>
-                    <div class="sobremiCont-perfilDesc">
+                    <div class="sobremiCont-perfilDesc animSobreMi">
                         <div>
                             <p>
                                 ¡Hola! me llamo <span class="bold">Jose Valencia</span>, estudiante en <span class="bold">Computación</span> 
-                                <span class="bold">e informática</span> del instituto Cibertec, tengo 23 años, apasionado 
+                                <span class="bold">e informática</span> del instituto Cibertec, tengo <span id="age"></span> años, apasionado 
                                 por la tecnología, en especial el <span class="bold">desarrollo web</span>.
                             </p>
                             <p>
                                 Me especializo en <span class="bold">programación web</span> (Fronted + Backend), con
-                                4 años de experiencia (práctica) desarrollando proyectos
+                                <span id="timeExp"></span> años de experiencia (práctica) desarrollando proyectos
                                 personales y otros realizados en equipo. 
                             </p>
                             <a target="_blank" class="cv" href="img/cvJoseValencia.pdf" title="CV">Descargar CV<i class="fas fa-download"></i></a>
@@ -183,6 +183,10 @@
                         <img src="img/adobeXd.png" class="item" alt="AdobeXd"> 
                         <p>ADOBE XD</p>
                     </div>
+                    <div class="img-habilidad"> 
+                        <img src="img/aws.png" class="item" alt="AWS"> 
+                        <p>AWS</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -196,13 +200,13 @@
                 </div>
             </div>
             <div class="contGrid">
-                <div class="proyecto">
+                <div class="proyecto animProy1">
                     <img src="img/image26.png" alt="">
                     <div class="descripcion">
-                        <p class="titulo">Pág. Herramientas</p>
+                        <p class="titulo">Pág. Proyectos Web</p>
                         <p class="tecnologias">Tecnologías: <span> php, js, jquery, scss </span></p>
                         <div class="btnDescrip">
-                            <a target="_blank" href="https://diwprog.com/herramientas" class="visualizar">
+                            <a target="_blank" href="https://diwprog.com/proyectos" class="visualizar">
                                 <i class="fas fa-eye"></i>Visualizar
                             </a>
                         </div>
@@ -211,7 +215,7 @@
                         <a target="_blank" href="" class="youtube">DiwProg</a>
                     </div>
                 </div>
-                <div class="proyecto">
+                <div class="proyecto animProy2">
                     <img src="img/image24.png" alt="">
                     <div class="descripcion">
                         <p class="titulo">Pág. Servicios Web</p>
@@ -226,13 +230,13 @@
                         <a target="_blank" href="" class="youtube">DiwProg</a>
                     </div>
                 </div>
-                <div class="proyecto">
+                <div class="proyecto animProy3">
                     <img src="img/image27.png" alt="">
                     <div class="descripcion">
                         <p class="titulo">Pág. Carro de Compras</p>
-                        <p class="tecnologias">Tecnologías: <span> php, js, jquery, api, tailwind </span></p>
+                        <p class="tecnologias">Tecnologías: <span> php, sql, js, jquery, api, tailwind </span></p>
                         <div class="btnDescrip">
-                            <a target="_blank" href="https://projects.diwprog.com/cartVisa.php" class="visualizar">
+                            <a target="_blank" href="https://projects.diwprog.com/templates/cartVisa.php" class="visualizar">
                                 <i class="fas fa-eye"></i>Visualizar
                             </a>
                         </div>
@@ -241,7 +245,22 @@
                         <a target="_blank" href="" class="youtube">CCE</a>
                     </div>
                 </div>
-                <div class="proyecto">
+                <div class="proyecto animProy4">
+                    <img src="img/image28.png" alt="">
+                    <div class="descripcion">
+                        <p class="titulo">Pág. Juego de Ajedrez</p>
+                        <p class="tecnologias">Tecnologías: <span> vue, js, jquery, scss </span></p>
+                        <div class="btnDescrip">
+                            <a target="_blank" href="https://www.chessjoin.com/jugar" class="visualizar">
+                                <i class="fas fa-eye"></i>Visualizar
+                            </a>
+                        </div>
+                    </div>  
+                    <div class="btnYoutube">
+                        <a target="_blank" href="" class="youtube">ChessJoin</a>
+                    </div>
+                </div>
+                <div class="proyecto animProy5">
                     <img src="img/image29.png" alt="">
                     <div class="descripcion">
                         <p class="titulo">Pág. Generador de Certificados</p>
@@ -287,6 +306,7 @@
 	</footer>
 
     <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
 </body>
