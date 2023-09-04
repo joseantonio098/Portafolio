@@ -437,6 +437,11 @@ header .contenedor .menu .menuEnlace a {
   background-color: #0b7781;
 }
 
+.contProyectos .contenedor .contGrid .proyecto .descripcion .btnDescrip .disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
 .contProyectos .contenedor .contGrid .proyecto .btnYoutube {
   display: -webkit-box;
   display: -ms-flexbox;

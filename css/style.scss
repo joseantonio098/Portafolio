@@ -326,6 +326,10 @@ header{
                         .visualizar{
                             background-color: #0b7781;
                         }
+                        .disabled{
+                            pointer-events: none; 
+                            cursor: default;
+                        }
                     }
                 }
                 .btnYoutube{
