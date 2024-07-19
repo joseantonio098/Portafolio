@@ -9,7 +9,6 @@ $(document).ready(function(){
     ScrollReveal().reveal('.animProy2',{reset: false, delay: 300, distance: '10px', origin: 'left', duration: 1500});
     ScrollReveal().reveal('.animProy3',{reset: false, delay: 700, distance: '10px', origin: 'left', duration: 1500});
     ScrollReveal().reveal('.animProy4',{reset: false, delay: 1000, distance: '10px', origin: 'left', duration: 1500});
-    ScrollReveal().reveal('.animProy5',{reset: false, delay: 100, distance: '10px', origin: 'left', duration: 1500});
 
     //-----------Calcular edad actual y experiencia
     const fechaAct = new Date();
@@ -63,4 +62,39 @@ $(document).ready(function(){
         }
     }
     window.document.addEventListener('scroll', desplazarMenu);
+});
+
+const contVideos = document.getElementById('contVideos');
+const btnVisualizar = document.querySelectorAll('.btn-visualizar');
+const srcProyectos = ['proyecto_plataforma_ajedrez','proyecto_proyectos_web','proyecto_dashboard','proyecto_certificado']
+
+btnVisualizar.forEach((btn,index)=>{
+    btn.addEventListener('click', (e)=>{
+        e.preventDefault();
+
+        contVideos.innerHTML= /* HTML */`
+            <div class="btn-cerrar">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <video id="my-video-${index}" class="video-js">
+                <source src="vid/${srcProyectos[index]}.mp4" type="video/mp4" />
+            </video>
+        `
+
+        videojs(document.getElementById(`my-video-${index}`), {
+            controls: true,
+            autoplay: false,
+            preload: 'auto',
+            height: 400
+        });
+        
+        document.querySelector('.btn-cerrar').addEventListener('click', ()=>{
+            contVideos.style.display="none"
+            contVideos.innerHTML = '';
+        });
+
+        contVideos.style.display="flex"
+    });     
+    
 });
