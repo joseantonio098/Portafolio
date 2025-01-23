@@ -1,305 +1,348 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Portafolio JV </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
-    <script src="https://kit.fontawesome.com/cdfd83a65d.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio JV</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/cdfd83a65d.js"
+      crossorigin="anonymous"
+    ></script>
     <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header id="menu-nav">
-        <div class="contenedor">
-            <div class="menu">
-                <div class="menuLogo">
-                    <p>JV Developer</p>
-                </div>
-                <div class="menuEnlace">
-                    <a href="#">Inicio</a>
-                    <a href="#sobremi">Sobre mí</a>
-                    <a href="#habilidades">Habilidades</a>
-                    <a href="#contProyectos">Proyectos</a>
-                    <a href="#footer">Contacto</a>
-                </div>
-            </div>
+      <div class="contenedor">
+        <div class="menu">
+          <div class="menuLogo">
+            <p>JV Developer</p>
+          </div>
+          <div class="menuEnlace">
+            <a href="#">Inicio</a>
+            <a href="#sobremi">Sobre mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contProyectos">Proyectos</a>
+            <a href="#footer">Contacto</a>
+          </div>
         </div>
+      </div>
     </header>
 
-     <section class="portada">
-        <main>
-            <div class="portadaCont">
-                <div class="contenedor">
-                    <div class="portadaCont-titulo animJV">
-                        <h2> José Valencia </h2>
-                        <p> Desarrollador Web <i class="fas fa-globe" id="web"></i> </p>
-                    </div>
-                </div>
+    <section class="portada">
+      <main>
+        <div class="portadaCont">
+          <div class="contenedor">
+            <div class="portadaCont-titulo animJV">
+              <h2>José Valencia</h2>
+              <p>Desarrollador Web <i class="fas fa-globe" id="web"></i></p>
             </div>
-        </main>
+          </div>
+        </div>
+      </main>
     </section>
 
     <section class="sobremi" id="sobremi">
-        <div class="contenedor">
-            <div class="sobremiCont">
-                <div class="sobremiCont-titulo">
-                    <h3 id="sobremi-link"> Sobre mí </h3>                                                   
-                </div>
-                <div class="sobremiCont-perfil">
-                    <div class="sobremiCont-perfilFoto">
-                        <div class="animImgPerf">
-                            <img src="img/imgPerfil.jpg" alt="Imagen-Perfil">
-                        </div>
-                    </div>
-                    <div class="sobremiCont-perfilDesc animSobreMi">
-                        <div>
-                            <p>
-                                Hola, soy <span class="bold">José Valencia</span>. 
-                                Tengo <span id="age"></span> años y una gran pasión por la tecnología, 
-                                especialmente en el <span class="bold">Desarrollo Web.</span>
-                            </p>
-                            <p>
-                                Me he especializado en el <span class="bold">Desarrollo Web</span>, 
-                                abarcando tanto el Frontend como el Backend, y cuento con <span id="timeExp"></span> años 
-                                de experiencia en este rubro, de los cuales 3 años corresponden a experiencia laboral. 
-                                Mi formación y experiencia me permiten abordar los desafíos 
-                                del desarrollo web con una perspectiva integral y actualizada.  
-                            </p>
-                            <a target="_blank" class="cv" href="img/cvJoseValencia.pdf" title="CV">Descargar CV<i class="fas fa-download"></i></a>
-                        </div>
-                    </div>
-                </div>
+      <div class="contenedor">
+        <div class="sobremiCont">
+          <div class="sobremiCont-titulo">
+            <h3 id="sobremi-link">Sobre mí</h3>
+          </div>
+          <div class="sobremiCont-perfil">
+            <div class="sobremiCont-perfilFoto">
+              <div class="animImgPerf">
+                <img src="img/imgPerfil.jpg" alt="Imagen-Perfil" />
+              </div>
             </div>
+            <div class="sobremiCont-perfilDesc animSobreMi">
+              <div>
+                <p>
+                  Hola, soy <span class="bold">José Valencia</span>. Tengo
+                  <span id="age"></span> años y una gran pasión por la
+                  tecnología, especialmente en el
+                  <span class="bold">Desarrollo Web.</span>
+                </p>
+                <p>
+                  Me he especializado en el
+                  <span class="bold">Desarrollo Web</span>, abarcando tanto el
+                  Frontend como el Backend, y cuento con
+                  <span id="timeExp"></span> años de experiencia en este rubro,
+                  de los cuales 3 años corresponden a experiencia laboral. Mi
+                  formación y experiencia me permiten abordar los desafíos del
+                  desarrollo web con una perspectiva integral y actualizada.
+                </p>
+                <a
+                  target="_blank"
+                  class="cv"
+                  href="img/cvJoseValencia.pdf"
+                  title="CV"
+                  >Descargar CV<i class="fas fa-download"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="habilidades" id="habilidades">
-        <div class="contenedor">
-            <div class="habilidadesTitulo">
-                <div class="titulo-habilidades">
-                    <h3 id="habilidades-link"> Habilidades </h3>                                                   
-                </div>
-            </div>
-            <div class="habilidadesCont">
-                <!-- Tecnologías Frontend -->
-                <div class="habilidadesCont-titulo">
-                    <p> Desarrollo Frontend </p>                                                   
-                </div>
-                <div class="owl-carousel owl-theme">
-                    <div class="img-habilidad"> 
-                        <img src="img/html5.png" class="item" alt="Html5">
-                        <p>HTML5</p>
-                    </div>
-                    <div class="img-habilidad"> 
-                        <img src="img/css3.png" class="item" alt="Css3"> 
-                        <p>CSS3</p>
-                    </div>
-                    <div class="img-habilidad">
-                        <img src="img/js.png" class="item" alt="Js">
-                        <p>JAVASCRIPT</p>
-                    </div>
-                    <div class="img-habilidad"> 
-                        <img src="img/vue.png" class="item" alt="Vue">
-                        <p>VUE</p>
-                    </div>
-                    <div class="img-habilidad"> 
-                        <img src="img/jquery.png" class="item" alt="Jquery">
-                        <p>JQUERY</p>
-                    </div>
-                    <div class="img-habilidad"> 
-                        <img src="img/sass.png" class="item" alt="Sass"> 
-                        <p>SASS</p>
-                    </div>
-                    <div class="img-habilidad"> 
-                        <img src="img/bootstrap.png" class="item" alt="Bootstrap4"> 
-                        <p>BOOTSTRAP</p>
-                    </div>
-                    <div class="img-habilidad"> 
-                        <img src="img/tailwind.png" class="item" alt="Tailwind">
-                        <p>TAILWIND</p>
-                    </div>
-                    <div class="img-habilidad"> 
-                        <img src="img/datatables.png" class="item" alt="Datatables">
-                        <p>DATATABLES</p>
-                    </div>
-                </div>
-
-                <!-- Tecnologías Backend -->
-                <div class="habilidadesCont-titulo">
-                    <p> Desarrollo Backend </p>                                                   
-                </div>
-                <div class="owl-carousel owl-theme"> 
-                    <div class="img-habilidad"> 
-                        <img src="img/php.png" class="item" alt="Php7"> 
-                        <p>PHP</p>
-                    </div>
-                    <div class="img-habilidad"> 
-                        <img src="img/nodejs.png" class="item" alt="NodeJS"> 
-                        <p>NODE JS</p>
-                    </div>
-                    <div class="img-habilidad"> 
-                        <img src="img/mysql.png" class="item" alt="Mysql">
-                        <p>MYSQL</p>
-                    </div>
-                    <div class="img-habilidad"> 
-                        <img src="img/mongodb.png" class="item" alt="MongoDB"> 
-                        <p>MONGODB</p>
-                    </div>
-                    <div class="img-habilidad"> 
-                        <img src="img/laravel.png" class="item" alt="Laravel"> 
-                        <p>LARAVEL</p>
-                    </div>
-                    <div class="img-habilidad"> 
-                        <img src="img/express.png" class="item" alt="Express"> 
-                        <p>EXPRESS</p>
-                    </div>
-                </div>
-
-                <!-- Herramientas -->
-                <div class="habilidadesCont-titulo">
-                    <p> Herramientas </p>                                                   
-                </div>
-                <div class="owl-carousel owl-theme"> 
-                    <div class="img-habilidad"> 
-                        <img src="img/wordpress.png" class="item" alt="Wordpress"> 
-                        <p>WORDPRESS</p>
-                    </div>
-                    <div class="img-habilidad"> 
-                        <img src="img/git.png" class="item" alt="Git">
-                        <p>GIT</p>
-                    </div>
-                    <div class="img-habilidad"> 
-                        <img src="img/github.png" class="item" alt="Github"> 
-                        <p>GITHUB</p>
-                    </div>
-                    <div class="img-habilidad"> 
-                        <img src="img/cPanel.png" class="item" alt="Cpanel"> 
-                        <p>CPANEL</p>
-                    </div>
-                    <div class="img-habilidad"> 
-                        <img src="img/figma.png" class="item" alt="Figma"> 
-                        <p>FIGMA</p>
-                    </div>
-                    <div class="img-habilidad"> 
-                        <img src="img/adobeXd.png" class="item" alt="AdobeXd"> 
-                        <p>ADOBE XD</p>
-                    </div>
-                    <div class="img-habilidad"> 
-                        <img src="img/aws.png" class="item" alt="AWS"> 
-                        <p>AWS</p>
-                    </div>
-                </div>
-            </div>
+      <div class="contenedor">
+        <div class="habilidadesTitulo">
+          <div class="titulo-habilidades">
+            <h3 id="habilidades-link">Habilidades</h3>
+          </div>
         </div>
+        <div class="habilidadesCont">
+          <!-- Tecnologías Frontend -->
+          <div class="habilidadesCont-titulo">
+            <p>Desarrollo Frontend</p>
+          </div>
+          <div class="owl-carousel owl-theme">
+            <div class="img-habilidad">
+              <img src="img/html5.png" class="item" alt="Html5" />
+              <p>HTML5</p>
+            </div>
+            <div class="img-habilidad">
+              <img src="img/css3.png" class="item" alt="Css3" />
+              <p>CSS3</p>
+            </div>
+            <div class="img-habilidad">
+              <img src="img/js.png" class="item" alt="Js" />
+              <p>JAVASCRIPT</p>
+            </div>
+            <div class="img-habilidad">
+              <img src="img/vue.png" class="item" alt="Vue" />
+              <p>VUE</p>
+            </div>
+            <div class="img-habilidad">
+              <img src="img/jquery.png" class="item" alt="Jquery" />
+              <p>JQUERY</p>
+            </div>
+            <div class="img-habilidad">
+              <img src="img/sass.png" class="item" alt="Sass" />
+              <p>SASS</p>
+            </div>
+            <div class="img-habilidad">
+              <img src="img/bootstrap.png" class="item" alt="Bootstrap4" />
+              <p>BOOTSTRAP</p>
+            </div>
+            <div class="img-habilidad">
+              <img src="img/tailwind.png" class="item" alt="Tailwind" />
+              <p>TAILWIND</p>
+            </div>
+            <div class="img-habilidad">
+              <img src="img/datatables.png" class="item" alt="Datatables" />
+              <p>DATATABLES</p>
+            </div>
+          </div>
+
+          <!-- Tecnologías Backend -->
+          <div class="habilidadesCont-titulo">
+            <p>Desarrollo Backend</p>
+          </div>
+          <div class="owl-carousel owl-theme">
+            <div class="img-habilidad">
+              <img src="img/php.png" class="item" alt="Php7" />
+              <p>PHP</p>
+            </div>
+            <div class="img-habilidad">
+              <img src="img/nodejs.png" class="item" alt="NodeJS" />
+              <p>NODE JS</p>
+            </div>
+            <div class="img-habilidad">
+              <img src="img/mysql.png" class="item" alt="Mysql" />
+              <p>MYSQL</p>
+            </div>
+            <div class="img-habilidad">
+              <img src="img/mongodb.png" class="item" alt="MongoDB" />
+              <p>MONGODB</p>
+            </div>
+            <div class="img-habilidad">
+              <img src="img/laravel.png" class="item" alt="Laravel" />
+              <p>LARAVEL</p>
+            </div>
+            <div class="img-habilidad">
+              <img src="img/express.png" class="item" alt="Express" />
+              <p>EXPRESS</p>
+            </div>
+          </div>
+
+          <!-- Herramientas -->
+          <div class="habilidadesCont-titulo">
+            <p>Herramientas</p>
+          </div>
+          <div class="owl-carousel owl-theme">
+            <div class="img-habilidad">
+              <img src="img/wordpress.png" class="item" alt="Wordpress" />
+              <p>WORDPRESS</p>
+            </div>
+            <div class="img-habilidad">
+              <img src="img/git.png" class="item" alt="Git" />
+              <p>GIT</p>
+            </div>
+            <div class="img-habilidad">
+              <img src="img/github.png" class="item" alt="Github" />
+              <p>GITHUB</p>
+            </div>
+            <div class="img-habilidad">
+              <img src="img/cPanel.png" class="item" alt="Cpanel" />
+              <p>CPANEL</p>
+            </div>
+            <div class="img-habilidad">
+              <img src="img/figma.png" class="item" alt="Figma" />
+              <p>FIGMA</p>
+            </div>
+            <div class="img-habilidad">
+              <img src="img/adobeXd.png" class="item" alt="AdobeXd" />
+              <p>ADOBE XD</p>
+            </div>
+            <div class="img-habilidad">
+              <img src="img/aws.png" class="item" alt="AWS" />
+              <p>AWS</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="contProyectos" id="contProyectos">
-        <div class="contenedor">
-            <div class="habilidadesTitulo">
-                <div class="titulo-habilidades">
-                    <h3 id="habilidades-link"> Proyectos </h3>                                                   
-                </div>
-            </div>
-            <div class="contGrid">
-                <div class="proyecto animProy1">
-                    <img src="img/portada_proyecto_ajedrez.png" alt="">
-                    <div class="descripcion">
-                        <p class="titulo">Plataforma de Ajedrez Online</p>
-                        <p class="tecnologias">Tecnologías: <span> js - vue - nodejs - express - mondogdb </span></p>
-                        <div class="btnDescrip">
-                            <a  href="" class="visualizar btn-visualizar">
-                                <i class="fas fa-eye"></i>Visualizar
-                            </a>
-                        </div>
-                    </div>  
-                    <div class="btnYoutube">
-                        <a target="_blank" href="" class="youtube">Chess</a>
-                    </div>
-                </div>
-                <div class="proyecto animProy2">
-                    <img src="img/portada_proyecto_proyectosWeb.png" alt="">
-                    <div class="descripcion">
-                        <p class="titulo">Pág. Proyectos Web + Herramientas</p>
-                        <p class="tecnologias">Tecnologías: <span> php - mysql - js - jquery - scss </span></p>
-                        <div class="btnDescrip">
-                            <a href="" class="visualizar btn-visualizar">
-                                <i class="fas fa-eye"></i>Visualizar
-                            </a>
-                        </div>
-                    </div>
-                    <div class="btnYoutube">
-                        <a target="_blank" href="" class="youtube">DiwProg</a>
-                    </div>
-                </div>
-                <div class="proyecto animProy3">
-                    <img src="img/portada_proyecto_carritoDash.png" alt="">
-                    <div class="descripcion">
-                        <p class="titulo">Pág. Carro de Compras + Dashboard</p>
-                        <p class="tecnologias">Tecnologías: <span> php - mysql - js - jquery - tailwind </span></p>
-                        <div class="btnDescrip">
-                            <a href="" class="visualizar btn-visualizar">
-                                <i class="fas fa-eye"></i>Visualizar
-                            </a>
-                        </div>
-                    </div>  
-                    <div class="btnYoutube">
-                        <a target="_blank" href="" class="youtube">CCE</a>
-                    </div>
-                </div>
-                <div class="proyecto animProy4">
-                    <img src="img/portada_proyecto_certificado.png" alt="">
-                    <div class="descripcion">
-                        <p class="titulo">Pág. Generador de Certificados</p>
-                        <p class="tecnologias">Tecnologías: <span> php - fpdf - datatables - js - bootstrap </span></p>
-                        <div class="btnDescrip">
-                            <a href="" class="visualizar btn-visualizar">
-                                <i class="fas fa-eye"></i>Visualizar
-                            </a>
-                        </div>
-                    </div>  
-                    <div class="btnYoutube">
-                        <a target="_blank" href="" class="youtube">Pamolsa</a>
-                    </div>
-                </div>
-            </div>
+      <div class="contenedor">
+        <div class="habilidadesTitulo">
+          <div class="titulo-habilidades">
+            <h3 id="habilidades-link">Proyectos</h3>
+          </div>
         </div>
+        <div class="contGrid">
+          <div class="proyecto animProy1">
+            <img src="img/portada_proyecto_ajedrez.png" alt="" />
+            <div class="descripcion">
+              <p class="titulo">Plataforma de Ajedrez Online</p>
+              <p class="tecnologias">
+                Tecnologías:
+                <span> js - vue - nodejs - express - mondogdb </span>
+              </p>
+              <div class="btnDescrip">
+                <a href="" class="visualizar btn-visualizar">
+                  <i class="fas fa-eye"></i>Visualizar
+                </a>
+              </div>
+            </div>
+            <div class="btnYoutube">
+              <a target="_blank" href="" class="youtube">Chess</a>
+            </div>
+          </div>
+          <div class="proyecto animProy2">
+            <img src="img/portada_proyecto_proyectosWeb.png" alt="" />
+            <div class="descripcion">
+              <p class="titulo">Pág. Proyectos Web + Herramientas</p>
+              <p class="tecnologias">
+                Tecnologías: <span> php - mysql - js - jquery - scss </span>
+              </p>
+              <div class="btnDescrip">
+                <a href="" class="visualizar btn-visualizar">
+                  <i class="fas fa-eye"></i>Visualizar
+                </a>
+              </div>
+            </div>
+            <div class="btnYoutube">
+              <a target="_blank" href="" class="youtube">DiwProg</a>
+            </div>
+          </div>
+          <div class="proyecto animProy3">
+            <img src="img/portada_proyecto_carritoDash.png" alt="" />
+            <div class="descripcion">
+              <p class="titulo">Pág. Carro de Compras + Dashboard</p>
+              <p class="tecnologias">
+                Tecnologías: <span> php - mysql - js - jquery - tailwind </span>
+              </p>
+              <div class="btnDescrip">
+                <a href="" class="visualizar btn-visualizar">
+                  <i class="fas fa-eye"></i>Visualizar
+                </a>
+              </div>
+            </div>
+            <div class="btnYoutube">
+              <a target="_blank" href="" class="youtube">CCE</a>
+            </div>
+          </div>
+          <div class="proyecto animProy4">
+            <img src="img/portada_proyecto_certificado.png" alt="" />
+            <div class="descripcion">
+              <p class="titulo">Pág. Generador de Certificados</p>
+              <p class="tecnologias">
+                Tecnologías:
+                <span> php - fpdf - datatables - js - bootstrap </span>
+              </p>
+              <div class="btnDescrip">
+                <a href="" class="visualizar btn-visualizar">
+                  <i class="fas fa-eye"></i>Visualizar
+                </a>
+              </div>
+            </div>
+            <div class="btnYoutube">
+              <a target="_blank" href="" class="youtube">Pamolsa</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="contVideos" id="contVideos">
-        <!-- VIDEOS -->
+      <!-- VIDEOS -->
     </section>
 
     <footer id="footer">
-		<div class="contenedor">
-            <div class="footerCopy">
-                <p>José Valencia | Copyright ©</p>
-            </div>
-            <div class="footerIcon">
-                <a target="_blank" href="https://wa.me/51967469124" class="social-icon social-icon--whatsapp">
-                    <i class="fab fa-whatsapp"></i>
-                    <div class="tooltip">967469124</div>
-                  </a>
-                <a class="social-icon social-icon--correo">
-                    <i class="fas fa-envelope"></i>
-                  <div class="tooltip">joseantoniovalen1@gmail.com</div>
-                </a>
-                <a target="_blank" href="https://github.com/joseantonio098" class="social-icon social-icon--github">
-                    <i class="fab fa-github"></i>
-                    <div class="tooltip">joseantonio098</div>
-                </a>
-                <a target="_blank" href="img/cvJoseValencia.pdf" class="social-icon social-icon--cv">
-                    <i class="fas fa-file-download"></i>
-                    <div class="tooltip">CV</div>
-                </a>
-            </div>
+      <div class="contenedor">
+        <div class="footerCopy">
+          <p>José Valencia | Copyright ©</p>
         </div>
-	</footer>
+        <div class="footerIcon">
+          <a
+            target="_blank"
+            href="https://wa.me/51912620425"
+            class="social-icon social-icon--whatsapp"
+          >
+            <i class="fab fa-whatsapp"></i>
+            <div class="tooltip">912620425</div>
+          </a>
+          <a class="social-icon social-icon--correo">
+            <i class="fas fa-envelope"></i>
+            <div class="tooltip">joseantoniovalen1@gmail.com</div>
+          </a>
+          <a
+            target="_blank"
+            href="https://github.com/joseantonio098"
+            class="social-icon social-icon--github"
+          >
+            <i class="fab fa-github"></i>
+            <div class="tooltip">joseantonio098</div>
+          </a>
+          <a
+            target="_blank"
+            href="img/cvJoseValencia.pdf"
+            class="social-icon social-icon--cv"
+          >
+            <i class="fas fa-file-download"></i>
+            <div class="tooltip">CV</div>
+          </a>
+        </div>
+      </div>
+    </footer>
 
     <script src="js/jquery-3.5.0.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
     <script src="js/app.js"></script>
-</body>
+  </body>
 </html>
